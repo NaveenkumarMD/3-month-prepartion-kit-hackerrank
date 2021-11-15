@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: "3.8"
       - name : Running Writereadme.py file
-        run: python3.8 Writereadme.py
+        run: python Writereadme.py
         
 
 
