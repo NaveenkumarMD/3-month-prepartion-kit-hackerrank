@@ -1,3 +1,7 @@
+# Hackerrank Solutions
+## 3 month interview preparation kit solutions in python
+## (included with mock tests)
+
  ## [Week_1](Week_1)
 *  [Breakingrecorrd.py](Week_1/Breakingrecorrd.py)
 *  [Camelcase4.py](Week_1/Camelcase4.py)

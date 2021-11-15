@@ -1,0 +1,20 @@
+name: Generating readme file
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+      - name : Running Writereadme.py file
+        run: python3.8 Writereadme.py
+        
+
+
+          

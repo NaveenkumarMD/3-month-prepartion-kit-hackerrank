@@ -2,6 +2,9 @@ import os
 readmefile=open('readme.md','w')
 dir_ignore=['.git','.github']
 dit={}
+readmefile.write("# Hackerrank Solutions\n")
+readmefile.write("## 3 month interview preparation kit solutions in python\n")
+readmefile.write("## (included with mock tests)\n\n")
 for dirname, dirnames, filenames in os.walk('.'):  
     #leaving the exceptional folders
     if any(dir_ignore_name in dirname for dir_ignore_name in dir_ignore):
