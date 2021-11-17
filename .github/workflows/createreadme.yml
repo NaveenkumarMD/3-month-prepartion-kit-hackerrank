@@ -17,7 +17,7 @@ jobs:
       - name : Generating new version
         with:
           token : ${{secrets.ACCESS_KEY}}
-        run: |
+      - run: |
           git config user.name "Naveenkumar M"
           git config user.email naveen9715568487@gmail.com
           git add .
