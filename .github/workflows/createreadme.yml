@@ -15,6 +15,7 @@ jobs:
       - name : Running Writereadme.py file
         run: python Writereadme.py
   report:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
