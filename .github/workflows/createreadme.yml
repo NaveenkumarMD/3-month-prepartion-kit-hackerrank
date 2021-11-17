@@ -14,16 +14,21 @@ jobs:
           python-version: "3.8"
       - name : Running Writereadme.py file
         run: python Writereadme.py
-        
+  Refactor_Folder_Structure:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generating new version
         with:
-          token : ${{secrets.ACCESS_KEY}}
-      - name : Generating new version
-        run: |
+          token: ${{secrets.ACCESS_TOKEN}}
+      - run: |
           git config user.name "Naveenkumar M"
           git config user.email naveen9715568487@gmail.com
           git add .
           git commit -m "generating reafctored files"
           git push origin master
+          
+
 
 
 
