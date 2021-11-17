@@ -14,25 +14,18 @@ jobs:
           python-version: "3.8"
       - name : Running Writereadme.py file
         run: python Writereadme.py
-  push:
+  report:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
-      with:
-        ref: master
-    - name: build
-      uses: github-actions-x/hugo@master
-    - name: push
-      uses: github-actions-x/commit@v2.8
-      with:
-        github-token: ${{ secrets.ACCESS_KEY }}
-        push-branch: 'master'
-        commit-message: 'publish'
-        force-add: 'true'
-        files: .
-        name: Naveenkumar M
-        email: naveen9715568487@email.com
+      - uses: actions/checkout@v2
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'Naveenkumar M'
+          git config --global user.email 'naveen9715568487@gmail.com'
+          git commit -am "Automated report"
+          git push
 
           
 
