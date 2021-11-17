@@ -33,3 +33,5 @@
 *  [Numberlinejumps.py](Week_4/Numberlinejumps.py)
 *  [Pickingnumbers.py](Week_4/Pickingnumbers.py)
 *  [Separatethenumbers.py](Week_4/Separatethenumbers.py)
+ ## [Week_5](Week_5)
+*  [Max min.py](Week_5/Max min.py)
