@@ -24,8 +24,9 @@ jobs:
         run: |
           git config --global user.name 'Naveenkumar M'
           git config --global user.email 'naveen9715568487@gmail.com'
+          git add .
           git commit -am "Automated report"
-          git push
+          git push origin master
 
           
 
