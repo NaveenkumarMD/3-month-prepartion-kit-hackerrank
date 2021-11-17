@@ -14,18 +14,25 @@ jobs:
           python-version: "3.8"
       - name : Running Writereadme.py file
         run: python Writereadme.py
-  Refactor_Folder_Structure:
-    runs-on: windows-latest
+  push:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{secrets.ACCESS_TOKEN}}
-      - run: |
-          git config user.name "Naveenkumar M"
-          git config user.email naveen9715568487@gmail.com
-          git add .
-          git commit -m "generating reafctored files"
-          git push origin master
+    - name: checkout
+      uses: actions/checkout@master
+      with:
+        ref: master
+    - name: build
+      uses: github-actions-x/hugo@master
+    - name: push
+      uses: github-actions-x/commit@v2.8
+      with:
+        github-token: ${{ secrets.ACCESS_KEY }}
+        push-branch: 'master'
+        commit-message: 'publish'
+        force-add: 'true'
+        files: .
+        name: Naveenkumar M
+        email: naveen9715568487@email.com
 
           
 
