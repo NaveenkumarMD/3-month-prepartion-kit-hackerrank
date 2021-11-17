@@ -20,6 +20,7 @@ for dirname, dirnames, filenames in os.walk('.'):
             dir_name=dirname[2:]
             print(dir_name)
             print(filename)
+            new_name=filename
             #rename all filenames to camelcase
             if filename.endswith('.py') or filename.endswith('.Py'):
                 print("yes")
@@ -27,9 +28,9 @@ for dirname, dirnames, filenames in os.walk('.'):
                 print(new_name)
                 os.rename(os.path.join(dirname,filename),os.path.join(dirname,new_name))
             if dir_name not in dit and dir_name != '':
-                dit[dir_name]=[filename]
+                dit[dir_name]=[new_name]
             elif dir_name in dit and dir_name != '':
-                dit[dir_name].append(filename)
+                dit[dir_name].append(new_name)
         
 print(dit)
 # write relative link and names to readme.md
