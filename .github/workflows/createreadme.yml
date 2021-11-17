@@ -18,7 +18,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Generating new version
         with:
           token: ${{secrets.ACCESS_TOKEN}}
       - name: Refactoring
