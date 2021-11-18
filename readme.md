@@ -29,6 +29,7 @@
 *  [Subarraydivision.py](Week_3/Subarraydivision.py)
 *  [Xorstrings3.py](Week_3/Xorstrings3.py)
  ## [Week_4](Week_4)
+*  [Anagrams.py](Week_4/Anagrams.py)
 *  [Caesarcipher.py](Week_4/Caesarcipher.py)
 *  [Closestnumbers.py](Week_4/Closestnumbers.py)
 *  [Leftrotation.py](Week_4/Leftrotation.py)
@@ -38,4 +39,4 @@
 *  [Separatethenumbers.py](Week_4/Separatethenumbers.py)
 *  [Towerbreakers.py](Week_4/Towerbreakers.py)
  ## [Week_5](Week_5)
-*  [MaxMin.py](Week_5/MaxMin.py)
+*  [Maxmin.py](Week_5/Maxmin.py)
