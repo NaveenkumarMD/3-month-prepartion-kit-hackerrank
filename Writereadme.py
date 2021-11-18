@@ -18,8 +18,6 @@ for dirname, dirnames, filenames in os.walk('.'):
     for filename in filenames:
         if '.git' not in dirname:
             dir_name=dirname[2:]
-            print(dir_name)
-            print(filename)
             new_name=filename
             #rename all filenames to camelcase
             if filename.endswith('.py') or filename.endswith('.Py'):
@@ -38,5 +36,4 @@ for key,value in dit.items():
     readmefile.write(' ## [{}]({})\n'.format(key,key))
     for i in value:
         readmefile.write('*  [{}]({}/{})\n'.format(i,key,i))
-    # readmefile.write('* ['+key+']('+key+'/'+value[0]+')\n')
 readmefile.close()
