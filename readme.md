@@ -40,3 +40,4 @@
 *  [Towerbreakers.py](Week_4/Towerbreakers.py)
  ## [Week_5](Week_5)
 *  [Maxmin.py](Week_5/Maxmin.py)
+*  [StrongPassword.py](Week_5/StrongPassword.py)
