@@ -1,9 +1,9 @@
-def func(arr,index):
-    if arr.count(0)==len(arr):
-        return arr
-    for i in range(index,len(arr)):
-        arr[i]-=1
-        func(arr,index=i)
-
-
-func(arr= [2, 1, 3],index=0)
+def misereNim(s):
+    if (set(s)=={1}) and n%2==1:
+        return 'Second'
+    elif (set(s)=={1}) and n%2==0:
+        return 'First'
+    elif reduce((lambda x,y:x^y),s):
+        return 'First'
+    else:
+        return 'Second'
